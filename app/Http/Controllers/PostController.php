@@ -12,7 +12,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all()->sortByDesc('created_at')->where('category_id','=','1');
-        $cat = Category::all();
+        $cat = Category::withCount('posts')->get();
         return view('post.index',[
             'posts' => $posts,
             'cat' => $cat

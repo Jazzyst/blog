@@ -58,6 +58,8 @@ nav {
         }
       nav ul li:hover {
         background-color: #585757; }
+.clearfix {
+  clear: both; }
 
 .hidden-menu,
 .toggle-btn {
@@ -245,6 +247,85 @@ nav {
   flex-wrap: wrap; }
 
 /*================ brokers-review END================*/
+
+
+/*================ video-review ================*/
+.video-review h1 {
+  font-size: 33px;
+  font-weight: bold;
+  margin: 50px 0;
+  text-align: center; }
+
+.video-review hr {
+  border-color: #000; }
+
+.video-wrap {
+  margin-bottom: 20px; }
+
+.embed__item {
+  width: 100%;
+  height: 392px;
+  margin: 0 auto; }
+
+.video-descr p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px; }
+
+.btn-wrap {
+  float: left; }
+
+.social-links {
+  float: right; }
+.social-links a {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin: 0 5px;
+  background-repeat: no-repeat;
+  background-position: center; }
+.social-links .vk {
+  background-image: url("/img/vk.svg"); }
+.social-links .fb {
+  background-image: url("/img/fb.svg"); }
+.social-links .twitt {
+  background-image: url("/img/twitt.svg"); }
+
+.start-trading {
+  border: 1px solid #000;
+  padding: 10px;
+  color: #000;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block; }
+.start-trading:hover {
+  background-color: #000;
+  color: #fff; }
+
+.similar-video-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.similar-video h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 30px 0; }
+
+/*================ video-review END ================*/
+
+
 /*================ Footer ================*/
 .foter-wrap {
   height: 76px;

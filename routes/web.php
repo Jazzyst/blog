@@ -31,6 +31,7 @@ Route::group( ['middleware' => ['auth']], function() {
     //Video Routes
 
     Route::get('/page', 'VideoController@index');
+    Route::get('/page/{page}', 'VideoController@show');
 
     // Post Routes
     Route::get('/posts','PostController@index')->name('posts.index');

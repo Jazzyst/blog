@@ -140,7 +140,7 @@ nav {
 
 .hidden-menu {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 75px;
   left: 0;
   width: 100%;
@@ -183,7 +183,67 @@ nav {
     display: none; }
 
 /*================header END================*/
+
+
+
+
+
 /*================ brokers-review ================*/
+.brokers-review h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.item-review {
+  display: block;
+  height: 180px;
+  width: 300px;
+  position: relative;
+  color: #fff;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  margin: 5px; }
+.item-review:hover{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.item-review span {
+  font-size: 20px;
+  padding-top: 20px;
+  display: block;
+  padding-left: 20px; }
+.item-review:hover {
+  opacity: .85; }
+
+.item-review:before {
+  content: "";
+  position: absolute;
+  background: -webkit-linear-gradient(45deg, #A6A4A4 0%, #242424 100%);
+  background: -o-linear-gradient(45deg, #A6A4A4 0%, #242424 100%);
+  background: linear-gradient(45deg, #A6A4A4 0%, #242424 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5; }
+
+.item-review-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
 /*================ brokers-review END================*/
 /*================ Footer ================*/
 .foter-wrap {

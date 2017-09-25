@@ -1,8 +1,6 @@
-<div class="col-sm-6 col-md-5 col-lg-4 blog-sidebar">
+<div class="col-sm-6 col-md-3 blog-sidebar">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
+   
                     <div class="card">
                         <div class="text-center">
                             <a href="#"><img src="https://memini.ru/assets/frontend/images/user.svg" class="img-circle"/></a>
@@ -18,9 +16,7 @@
                         </div>
 
                     </div>
-                </div>
-            </div>
-        </div>
+
 
             <div class="container">
                 <div class="row">

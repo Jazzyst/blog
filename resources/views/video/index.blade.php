@@ -6,19 +6,18 @@
 
     <div class="row">
 
-        <div class="col-sm-6 col-md-7 col-lg-8 blog-main">
-            <nav class="blog-pagination">
-                <a class="btn btn-outline-primary" href="/posts/create">Написать что нибудь</a>
-            </nav>
-
-                @include('post.item')
-
-
-
-            <nav class="blog-pagination">
-                <a class="btn btn-outline-primary" href="#">Назад</a>
-                <a class="btn btn-outline-secondary disabled" href="#">Вперед</a>
-            </nav>
+        <div class="col-sm-6 col-md-9">
+            <div class="brokers-review">
+                <h1>Видео-обзоры брокеров</h1>
+                <div class="item-review-wrap">
+                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
+                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
+                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
+                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
+                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
+                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
+                </div>
+            </div>
 
         </div>
 

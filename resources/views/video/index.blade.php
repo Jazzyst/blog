@@ -10,12 +10,10 @@
             <div class="brokers-review">
                 <h1>Видео-обзоры брокеров</h1>
                 <div class="item-review-wrap">
-                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
-                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
-                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
-                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
-                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
-                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
+                    @foreach($video as $video)
+                        <a href="{{$video->url}}" class="item-review"><span>{{ $video->name }}</span></a>
+                        @endforeach
+
                 </div>
             </div>
 

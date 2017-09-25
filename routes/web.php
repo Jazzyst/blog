@@ -28,9 +28,9 @@ Route::get('/dev', function (\App\User $user)
 
 Route::group( ['middleware' => ['auth']], function() {
 
-    //Page Routes
+    //Video Routes
 
-    Route::get('/page', 'PageController@index');
+    Route::get('/page', 'VideoController@index');
 
     // Post Routes
     Route::get('/posts','PostController@index')->name('posts.index');

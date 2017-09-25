@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Category;
+use App\Post;
 use Illuminate\Support\Facades\View;
 
 class ComposerProvider extends ServiceProvider
@@ -14,6 +16,10 @@ class ComposerProvider extends ServiceProvider
      */
     public function boot()
     {
+        View::share('posts', Post::all());
+        View::share('cat', Category::all());
+
+        View::share('item', Post::find(1));
     }
 
     /**

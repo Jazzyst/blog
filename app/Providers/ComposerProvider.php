@@ -17,7 +17,7 @@ class ComposerProvider extends ServiceProvider
     public function boot()
     {
         View::share('posts', Post::all());
-        View::share('cat', Category::all());
+        View::share('cat', Category::withCount('posts')->get());
 
         View::share('item', Post::find(1));
     }

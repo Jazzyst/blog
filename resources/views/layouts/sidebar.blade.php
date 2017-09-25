@@ -1,8 +1,8 @@
-<div class="col-sm-3 offset-sm-1 blog-sidebar">
+<div class="col-sm-6 col-md-5 col-lg-4 blog-sidebar">
 
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-4">
+                <div class="col-sm-12">
                     <div class="card">
                         <div class="text-center">
                             <a href="#"><img src="https://memini.ru/assets/frontend/images/user.svg" class="img-circle"/></a>
@@ -24,7 +24,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-4">
+                    <div class="col-sm-12">
                         <div class="card" style="margin-top: 50px;">
                             <div class="text-center">
                                 <div class="panel-body">

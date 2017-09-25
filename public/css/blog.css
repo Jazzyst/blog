@@ -29,9 +29,9 @@ h6, .h6 {
  * Override Bootstrap's default container.
  */
 
-.container {
-    max-width: 60rem;
-}
+/*.container {*/
+    /*max-width: 60rem;*/
+/*}*/
 
 
 /*

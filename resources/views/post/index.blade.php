@@ -2,11 +2,11 @@
 @section('content')
 
     @yield('content')
-    <div class="container">
+
 
         <div class="row">
 
-            <div class="col-sm-8 blog-main">
+            <div class="col-sm-6 col-md-7 col-lg-8 blog-main">
                 <nav class="blog-pagination">
                     <a class="btn btn-outline-primary" href="/posts/create">Написать что нибудь</a>
                 </nav>
@@ -29,5 +29,5 @@
 
         </div>
 
-    </div>
+
 @endsection

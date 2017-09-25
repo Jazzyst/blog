@@ -14,4 +14,11 @@ class VideoController extends Controller
             'video' => $video,
         ]);
     }
+
+
+    public function show($id)
+    {
+        $video = Video::findOrFail($id);
+        return $video;
+    }
 }

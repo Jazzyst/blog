@@ -321,7 +321,9 @@ nav {
 .similar-video h2 {
   font-size: 25px;
   font-weight: bold;
-  margin: 30px 0; }
+  margin: 30px 0;
+  text-align: center;
+}
 
 /*================ video-review END ================*/
 

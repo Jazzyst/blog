@@ -30,10 +30,10 @@
             <div class="similar-video">
                 <h2>Другие видео-обзоры</h2>
                 <div class="similar-video-wrap">
+                    @foreach($similar as $video)
 
-                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
-                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
-                    <a href="#" class="item-review"><span>Видео-обзор 24Option</span></a>
+                    <a href="/page/{{ $video->id }}" class="item-review"><span>{{ $video->name }}</span></a>
+                        @endforeach
                 </div>
             </div>
 

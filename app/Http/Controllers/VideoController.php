@@ -19,6 +19,10 @@ class VideoController extends Controller
     public function show($id)
     {
         $video = Video::findOrFail($id);
-        return $video;
+        $similar = Video::all()->where('id','!=', $id);
+        return view('video.show', [
+            'video' => $video,
+            'similar' => $similar,
+        ]);
     }
 }

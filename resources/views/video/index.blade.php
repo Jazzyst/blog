@@ -11,11 +11,8 @@
                 <a class="btn btn-outline-primary" href="/posts/create">Написать что нибудь</a>
             </nav>
 
-
-
-            @foreach($posts as $item)
                 @include('post.item')
-            @endforeach
+
 
 
             <nav class="blog-pagination">

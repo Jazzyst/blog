@@ -28,6 +28,10 @@ Route::get('/dev', function (\App\User $user)
 
 Route::group( ['middleware' => ['auth']], function() {
 
+    //Page Routes
+
+    Route::get('/page', 'PageController@index');
+
     // Post Routes
     Route::get('/posts','PostController@index')->name('posts.index');
     Route::get('/posts/show/{post}','PostController@show')->name('post.show');

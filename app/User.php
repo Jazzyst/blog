@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Auth;
 
 /**
  * App\User
@@ -63,13 +64,15 @@ class User extends Authenticatable
 
     public function registerFromGithub($user)
     {
-        User::create([
+       $user = User::create([
             'name' => $user->nickname,
             'email' => $user->email,
             'password' => bcrypt('password'),
             'token' => $user->token,
             'avatar'    => $user->avatar,
         ]);
+
+        Auth::login($user);
 
     }
 }

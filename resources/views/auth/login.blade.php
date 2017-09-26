@@ -58,7 +58,22 @@
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     Forgot Your Password?
                                 </a>
+
                             </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-4">
+                                <div class="social-links">
+                                    <a href="#" class="vk"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="twitt"></a>
+                                    <a href="#" class="goo"></a>
+                                    <a href="#" class="ok"></a>
+                                </div>
+
+                            </div>
+
                         </div>
                     </form>
                 </div>

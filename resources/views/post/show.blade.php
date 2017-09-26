@@ -9,18 +9,7 @@
     </div><!-- /.blog-post -->
 
     <br>
-    <div class="comments">
-        <ul class="list-group">
-            @foreach($post->comments as $comment)
-                <li class="list-group-item">
-                    {{ $comment->user->name }} &nbsp; <strong>
-     {{ $comment->created_at->diffForHumans() }}: &nbsp;
-                    </strong>
-                    {{ $comment->body }}
-                </li>
-                @endforeach
-        </ul>
-    </div>
+    @include('partials.post_comments')
 
     @include('comments.create')
 @endsection

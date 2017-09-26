@@ -65,11 +65,11 @@
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <div class="social-links">
-                                    <a href="#" class="vk"></a>
-                                    <a href="#" class="fb"></a>
-                                    <a href="#" class="twitt"></a>
-                                    <a href="#" class="goo"></a>
-                                    <a href="#" class="ok"></a>
+                                    <a href="vk/login/vk" class="vk"></a>
+                                    <a href="fb/login/fb" class="fb"></a>
+                                    <a href="twitter/login/twitter" class="twitt"></a>
+                                    <a href="gm/login/gmail" class="goo"></a>
+                                    <a href="ok/login/ok" class="ok"></a>
                                 </div>
 
                             </div>

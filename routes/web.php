@@ -32,6 +32,9 @@ Route::group( ['middleware' => ['auth']], function() {
 
     Route::get('/page', 'VideoController@index');
     Route::get('/page/{page}', 'VideoController@show');
+	Route::get('/forex', function (){
+		return view('video.forex');
+	});
 
     // Post Routes
     Route::get('/posts','PostController@index')->name('posts.index');

@@ -269,7 +269,7 @@ nav {
   display: block;
 }
 
-.video-descr p {
+p{
   text-align: left;
   font-size: 16px;
   line-height: 22px; }
@@ -323,7 +323,7 @@ nav {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.similar-video h2 {
+h2 {
   font-size: 25px;
   font-weight: bold;
   margin: 30px 0;
@@ -361,6 +361,48 @@ nav {
 
 
 /*================ video-review END ================*/
+
+
+/*================ forex-trading ================*/
+.forex-trading h1 {
+  font-size: 33px;
+  font-weight: bold;
+  margin: 50px 0; }
+
+.forex-tips {
+  display: block;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  color: #000;
+  border-left: 2px solid #585757;
+  font-weight: 600;
+  padding: .5rem 3.125rem .625rem .75rem;
+  cursor: pointer;
+  -webkit-transition: all 100ms ease;
+  -o-transition: all 100ms ease;
+  transition: all 100ms ease;
+  position: relative;
+  margin-top: .75rem;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+.forex-tips:hover {
+  background-color: #585757;
+  color: #fff; }
+
+.forex-tips:after {
+  content: "\025B8";
+  position: absolute;
+  right: .9375rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
+
+.descr {
+  margin-top: 20px; }
+
+/*================ forex-trading END ================*/
 
 
 /*================ Footer ================*/

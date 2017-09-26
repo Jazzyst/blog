@@ -75,4 +75,5 @@ class User extends Authenticatable
         Auth::login($user);
 
     }
+
 }

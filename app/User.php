@@ -70,6 +70,7 @@ class User extends Authenticatable
             'password' => bcrypt('password'),
             'token' => $user->token,
             'avatar'    => $user->avatar,
+	        'website' => 'vk',
         ]);
 
         Auth::login($user);

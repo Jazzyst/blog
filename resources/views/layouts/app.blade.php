@@ -15,7 +15,7 @@
         <link href="/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
         <link href="/css/blog.css" rel="stylesheet">
         <link href="/css/main.css" rel="stylesheet">
         <link href="/css/media.css" rel="stylesheet">

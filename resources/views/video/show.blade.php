@@ -6,7 +6,7 @@
 
     <div class="row">
 
-        <div class="col-sm-6 col-md-9">
+        <div class="col-md-9">
             <div class="video-review">
                 <h1>Видео-обзор 24Option</h1>
                 <div class="video-wrap">
@@ -41,10 +41,17 @@
                 <ul class="list-group">
                     @foreach($video->comments as $comment)
                         <li class="list-group-item">
-                            {{ $comment->user->name }} &nbsp; <strong>
-                                {{ $comment->created_at->diffForHumans() }}: &nbsp;
-                            </strong>
-                            {{ $comment->body }}
+                            <div class="user">
+                                <span class="user-avatar"></span>
+                                <span class="user-name">{{ $comment->user->name }} </span>
+                            </div>
+                            <div class="user-message">
+                                <strong class="message-time">
+                                    {{ $comment->created_at->diffForHumans() }}: &nbsp;
+                                </strong>
+                                <span class="user-comment">{{ $comment->body }}</span>
+                            </div>
+                           &nbsp;
                         </li>
                     @endforeach
                 </ul>

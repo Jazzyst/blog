@@ -1,4 +1,4 @@
-<div class="hidden-sm col-md-3 blog-sidebar">
+<div class="hidden-xs hidden-sm col-md-3 blog-sidebar">
 
    
                     <div class="card">

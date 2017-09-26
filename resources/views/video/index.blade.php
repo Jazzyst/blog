@@ -6,7 +6,7 @@
 
     <div class="row">
 
-        <div class="col-sm-6 col-md-9">
+        <div class="col-md-9">
             <div class="brokers-review">
                 <h1>Видео-обзоры брокеров</h1>
                 <div class="item-review-wrap">

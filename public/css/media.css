@@ -44,7 +44,18 @@
   .toggle-btn {
     display: block;
     position: absolute;
-    right: 20px; } }
+    right: 20px; }
+  .embed__item {
+    width: 480px;
+    height: 270px;
+    margin: 0 auto;
+    display: block;
+  }
+  .video-descr p, .social {
+    padding: 0 15px;
+  }
+
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -54,17 +65,37 @@
   .brokers-review h1 {
     font-size: 33px;
   }
+  .embed__item {
+    width: 340px;
+    height: 190px;
+
+  }
+  .btn-wrap, .social-links{
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .social-links{
+    margin-top: 20px;
+  }
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/ }
+  .embed__item {
+    width: 300px;
+    height: 160px;
+  }
+}
+
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-  /**/ }
+
+  /**/
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {

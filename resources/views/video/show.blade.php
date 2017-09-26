@@ -16,7 +16,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolore, velit, excepturi eaque sapiente facilis, reprehenderit tempore maxime impedit odit nobis odio at, ullam repellendus sunt hic. Quis voluptatum repellat soluta fuga obcaecati earum omnis iusto, sit nulla suscipit tempore officiis tenetur dolores placeat dolore ullam quo in ex sed autem, nesciunt. Maiores sunt sequi consequuntur modi et hic adipisci corporis. Quod ducimus eligendi voluptatum, quas eos in adipisci? A doloremque, numquam optio obcaecati perspiciatis placeat voluptas, provident dignissimos illum voluptate unde facere. Rerum veniam ratione beatae architecto repellendus officiis, corporis suscipit, minus sunt perferendis nihil non quae iure officia.</p>
                 </div>
                 <hr/>
-
             </div>
             <div class="social">
                 <div class="btn-wrap"><a href="#" class="start-trading">начать торговлю</a></div>
@@ -30,12 +29,28 @@
             <div class="similar-video">
                 <h2>Другие видео-обзоры</h2>
                 <div class="similar-video-wrap">
-                    @foreach($similar as $video)
+                    @foreach($similar as $videos)
 
-                    <a href="/page/{{ $video->id }}" class="item-review"><span>{{ $video->name }}</span></a>
+                    <a href="/page/{{ $videos->id }}" class="item-review"><span>{{ $videos->name }}</span></a>
                         @endforeach
                 </div>
             </div>
+
+            <br>
+            <div class="comments">
+                <ul class="list-group">
+                    @foreach($video->comments as $comment)
+                        <li class="list-group-item">
+                            {{ $comment->user->name }} &nbsp; <strong>
+                                {{ $comment->created_at->diffForHumans() }}: &nbsp;
+                            </strong>
+                            {{ $comment->body }}
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+
+            @include('comments.createvideo')
 
         </div>
 

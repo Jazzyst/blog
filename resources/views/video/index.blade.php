@@ -11,7 +11,7 @@
                 <h1>Видео-обзоры брокеров</h1>
                 <div class="item-review-wrap">
                     @foreach($video as $video)
-                        <a href="{{$video->id}}" class="item-review"><span>{{ $video->name }}</span></a>
+                        <a href="/page/{{$video->id}}" class="item-review"><span>{{ $video->name }}</span></a>
                         @endforeach
 
                 </div>

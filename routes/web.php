@@ -51,7 +51,8 @@ Route::group( ['middleware' => ['auth']], function() {
     Route::get('/profile/show/{id}', 'ProfileController@show')->name('profile.show');
 
     // Comments Routes
-    Route::post('/comments/add/{post}','CommentsController@store');
+    Route::post('/comments/add/post/{post}','CommentsController@store');
+    Route::post('/comments/add/video/{video}','CommentsController@video_store');
 
     // About Routes
     Route::get('/contact', 'AboutController@index');

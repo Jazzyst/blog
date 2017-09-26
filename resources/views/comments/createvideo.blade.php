@@ -1,5 +1,5 @@
 <hr>
-<form method="POST" action="/comments/add/post/{{$post->id}}">
+<form method="POST" action="/comments/add/video/{{$video->id}}">
     {{csrf_field()}}
     <div class="card">
         <div class="card-block">
@@ -13,12 +13,12 @@
             </form>
         </div>
     </div>
-@if(count($errors))
-<div class="alert alert-danger">
-    <ul>
-        @foreach($errors->all() as $error)
-        <li>{{$error}}</li>
-        @endforeach
-    </ul>
-</div>
+    @if(count($errors))
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
 @endif

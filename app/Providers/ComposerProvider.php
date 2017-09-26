@@ -20,6 +20,7 @@ class ComposerProvider extends ServiceProvider
         View::share('cat', Category::withCount('posts')->get());
 
         View::share('item', Post::find(1));
+        View::share('post', Post::find(1));
     }
 
     /**

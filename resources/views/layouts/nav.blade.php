@@ -4,10 +4,10 @@
             <div class="header">
                 <nav>
                     <ul>
-                        <li><a href="#">обзор брокеров</a></li>
+                        <li><a href="/posts">обзор брокеров</a></li>
                         <li><a href="#">стратегии</a></li>
                         <li><a href="#">аналитика</a></li>
-                        <li><a href="#">видео торговли</a></li>
+                        <li><a href="/page/">видео торговли</a></li>
                         <li><a href="#">новичкам</a></li>
                         <li><a href="#">черный список</a></li>
                         <li><a href="#">форекс</a></li>

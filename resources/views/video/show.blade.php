@@ -42,7 +42,7 @@
                     @foreach($video->comments as $comment)
                         <li class="list-group-item">
                             <div class="user">
-                                <span class="user-avatar"></span>
+                                <span class="user-avatar"><img src=" {{ $comment->user->avatar }} "> </span>
                                 <span class="user-name">{{ $comment->user->name }} </span>
                             </div>
                             <div class="user-message">

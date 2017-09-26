@@ -60,4 +60,16 @@ class User extends Authenticatable
     {
         return $this->hasMany(Comments::class);
     }
+
+    public function registerFromGithub($user)
+    {
+        User::create([
+            'name' => $user->nickname,
+            'email' => $user->email,
+            'password' => bcrypt('password'),
+            'token' => $user->token,
+            'avatar'    => $user->avatar,
+        ]);
+
+    }
 }

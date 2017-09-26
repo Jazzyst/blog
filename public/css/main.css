@@ -263,9 +263,11 @@ nav {
   margin-bottom: 20px; }
 
 .embed__item {
-  width: 100%;
+  width: 693px;
   height: 392px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: block;
+}
 
 .video-descr p {
   text-align: left;

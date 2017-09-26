@@ -1,4 +1,4 @@
-<div class="col-sm-6 col-md-3 blog-sidebar">
+<div class="hidden-sm col-md-3 blog-sidebar">
 
    
                     <div class="card">
@@ -18,9 +18,7 @@
                     </div>
 
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
+
                         <div class="card" style="margin-top: 50px;">
                             <div class="text-center">
                                 <div class="panel-body">
@@ -37,10 +35,6 @@
 
                         </div>
                     </div>
-                </div>
-            </div>
 
-
-        </div>
     </div>
 </div>

@@ -61,6 +61,17 @@ nav {
 .clearfix {
   clear: both; }
 
+
+
+/*register-form*/
+.form-group .social-links{
+  float: none;
+}
+/*register-form END*/
+
+
+/*======================== header ======================*/
+
 .hidden-menu,
 .toggle-btn {
   display: none; }
@@ -292,7 +303,10 @@ p{
   background-image: url("/img/fb.svg"); }
 .social-links .twitt {
   background-image: url("/img/twitt.svg"); }
-
+.social-links .goo {
+  background-image: url("/img/goo.svg"); }
+.social-links .ok {
+  background-image: url("/img/ok.svg"); }
 .start-trading {
   border: 1px solid #000;
   padding: 13px 10px 10px;
@@ -339,22 +353,31 @@ h2 {
   display: inline-block;
   vertical-align: middle;
 }
-.list-group-item .user .user-avatar{
-  display: block;
-  margin-bottom: 5px;
-}
+
 .list-group-item .user .user-avatar,
 .list-group-item .user .user-name{
   display: block;
   text-align: center;
 }
 .list-group-item .user .user-avatar{
+  display: block;
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   background-image: url("/img/user.svg");
   background-position: center;
   -webkit-background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto 10px;
+}
+.social-icon{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: -4px;
+  right: -4px;
+
 }
 
 
@@ -407,7 +430,30 @@ h2 {
 }
 
 
+
+
 /*================ forex-trading END ================*/
+
+/*comments*/
+.unregistred-user{
+  float: left;
+}
+.unregistred-user .warning-message,
+.unregistred-user .social-links{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form-group .btn-primary{
+  float: left;
+  margin-right: 10px;
+}
+
+
+
+
+/*comments-end*/
+
 
 
 /*================ Footer ================*/

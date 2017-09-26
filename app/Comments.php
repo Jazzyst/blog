@@ -43,7 +43,7 @@ class Comments extends Model
 
     public function getUserName()
     {
-        return $this->user ? $this->user->name : "Guest";
+        return empty($this->user->name) ? "Guest" : $this->user->name;
     }
 
     public function getUserAvatar()

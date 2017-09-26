@@ -70,11 +70,80 @@ class User extends Authenticatable
             'password' => bcrypt('password'),
             'token' => $user->token,
             'avatar'    => $user->avatar,
-	        'website' => 'vk',
+	        'website' => 'github',
         ]);
 
         Auth::login($user);
 
     }
 
+    public function registerFromVk($user)
+    {
+        $user = User::create([
+            'name' => $user->nickname,
+            'email' => $user->email,
+            'password' => bcrypt('password'),
+            'token' => $user->token,
+            'avatar'    => $user->avatar,
+            'website' => 'vk',
+        ]);
+
+        Auth::login($user);
+    }
+
+    public function registerFromFb($user)
+    {
+        $user = User::create([
+            'name' => $user->nickname,
+            'email' => $user->email,
+            'password' => bcrypt('password'),
+            'token' => $user->token,
+            'avatar'    => $user->avatar,
+            'website' => 'fb',
+        ]);
+
+        Auth::login($user);
+    }
+
+    public function registerFromOk($user)
+    {
+        $user = User::create([
+            'name' => $user->nickname,
+            'email' => $user->email,
+            'password' => bcrypt('password'),
+            'token' => $user->token,
+            'avatar'    => $user->avatar,
+            'website' => 'ok',
+        ]);
+
+        Auth::login($user);
+    }
+
+    public function registerFromTw($user)
+    {
+        $user = User::create([
+            'name' => $user->nickname,
+            'email' => $user->email,
+            'password' => bcrypt('password'),
+            'token' => $user->token,
+            'avatar'    => $user->avatar,
+            'website' => 'tw',
+        ]);
+
+        Auth::login($user);
+    }
+
+    public function registerFromGm($user)
+    {
+        $user = User::create([
+            'name' => $user->nickname,
+            'email' => $user->email,
+            'password' => bcrypt('password'),
+            'token' => $user->token,
+            'avatar'    => $user->avatar,
+            'website' => 'gm',
+        ]);
+
+        Auth::login($user);
+    }
 }

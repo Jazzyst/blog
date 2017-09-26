@@ -32,36 +32,7 @@ Route::group( ['middleware' => ['auth']], function() {
 
     //Video Routes
 
-    Route::get('/page', 'VideoController@index');
-    Route::get('/page/{page}', 'VideoController@show');
-	Route::get('/forex', function (){
-		return view('video.forex');
-	});
 
-    // Post Routes
-    Route::get('/posts','PostController@index')->name('posts.index');
-    Route::get('/posts/show/{post}','PostController@show')->name('post.show');
-    Route::get('/posts/create','PostController@create')->name('post.create');
-    Route::post('/posts/post','PostController@store')->name('post.store');
-
-
-    // Category Routes
-    Route::get('/category', 'CategoryController@index')->name('category.index');
-    Route::get('/category/{category}', 'CategoryController@show')->name('category.show');
-    Route::get('/add/category', 'CategoryController@create')->name('category.create');
-    Route::post('add/category/', 'CategoryController@store')->name('category.store');
-
-    // Profile Routes
-    Route::get('/profile/', 'ProfileController@index')->name('profile.index');
-    Route::get('/profile/show/{id}', 'ProfileController@show')->name('profile.show');
-
-    // Comments Routes
-    Route::post('/comments/add/post/{post}','CommentsController@store');
-    Route::post('/comments/add/video/{video}','CommentsController@video_store');
-
-    // About Routes
-    Route::get('/contact', 'AboutController@index');
-    Route::post('/contact/send', 'AboutController@store');
 
     Route::prefix('admin')->group(function () {
 
@@ -79,3 +50,34 @@ Route::group( ['middleware' => ['auth']], function() {
         Route::get('/comments/{comment}', 'AdminController@showComment');
     });
 });
+
+Route::get('/page', 'VideoController@index');
+Route::get('/page/{page}', 'VideoController@show');
+Route::get('/forex', function (){
+	return view('video.forex');
+});
+
+// Post Routes
+Route::get('/posts','PostController@index')->name('posts.index');
+Route::get('/posts/show/{post}','PostController@show')->name('post.show');
+Route::get('/posts/create','PostController@create')->name('post.create');
+Route::post('/posts/post','PostController@store')->name('post.store');
+
+
+// Category Routes
+Route::get('/category', 'CategoryController@index')->name('category.index');
+Route::get('/category/{category}', 'CategoryController@show')->name('category.show');
+Route::get('/add/category', 'CategoryController@create')->name('category.create');
+Route::post('add/category/', 'CategoryController@store')->name('category.store');
+
+// Profile Routes
+Route::get('/profile/', 'ProfileController@index')->name('profile.index');
+Route::get('/profile/show/{id}', 'ProfileController@show')->name('profile.show');
+
+// Comments Routes
+Route::post('/comments/add/post/{post}','CommentsController@store');
+Route::post('/comments/add/video/{video}','CommentsController@video_store');
+
+// About Routes
+Route::get('/contact', 'AboutController@index');
+Route::post('/contact/send', 'AboutController@store');

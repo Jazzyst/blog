@@ -11,16 +11,21 @@ class CategorySeeder extends Seeder
     public function run()
     {
         App\Category::create([
-            'name' => 'Главная',
+            'name' => 'Стратегии',
             'category_id' => 1,
         ]);
         App\Category::create([
-            'name' => 'Новости',
+            'name' => 'Аналитика',
             'category_id' => 2,
         ]);
         App\Category::create([
-            'name' => 'Что угодно',
+            'name' => 'Новичкам',
             'category_id' => 3,
+        ]);
+
+        App\Category::create([
+            'name' => 'Черный список',
+            'category_id' => 4,
         ]);
     }
 }

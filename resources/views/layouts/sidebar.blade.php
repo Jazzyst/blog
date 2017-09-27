@@ -26,11 +26,6 @@
 
 
                         </div>
-
-                    </div>
-
-
-
                         <div class="card" style="margin-top: 50px;">
                             <div class="text-center">
                                 <div class="panel-body">
@@ -43,10 +38,15 @@
                                         </ul>
                                     </div>
 
-                            </div>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
+
+
+
+
 
     </div>
 </div>

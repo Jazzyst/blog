@@ -3,11 +3,13 @@
    
                     <div class="card">
                         <div class="text-center">
-                            <a href="#"><img src="https://memini.ru/assets/frontend/images/user.svg" class="img-circle"/></a>
                             @auth()
-                            <h3 class="text-center">{{ "Профайл: " }}<a href="/profile/show/{{$item->user->id}}">{{$item->user->name}}</a></h3>
+                            <a href="#"><img src="{{ auth()->user()->avatar }}" class="img-circle"/></a>
+                            <h3 class="text-center">{{ "Профайл: " }}<a href="/profile/show/{{ auth()->user()->id }}">{{ auth()->user()->name }}</a></h3>
                             <p>Кол-во постов: {{ auth()->user()->posts->count() }}</p>
                             <p> Регистрация : {{ auth()->user()->created_at->diffForHumans() }}</p>
+                            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
                                 @else
                                     <a href="{{ route('login') }}">Login</a>
                                     <a href="{{ route('register') }}">Register</a>

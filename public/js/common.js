@@ -22,7 +22,6 @@ $(function() {
 
 
 
-    $(".user-avatar img").addClass("circle-img");
 
 
 

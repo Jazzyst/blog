@@ -88,4 +88,9 @@ class User extends Authenticatable
     {
         return $this->website;
     }
+
+    public function getUserAvatar()
+    {
+    	return Auth::user() && Auth::user()->avatar ?  Auth::user()->avatar : 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/07/28/16/avatar.jpg';
+    }
 }

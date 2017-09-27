@@ -9,11 +9,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
+html{
+  height: 100%;
+}
 
 body {
   line-height: 1;
   min-width: 320px;
-  font-family: 'Open Sans', Arial, Verdana, sans-serif; }
+  font-family: 'Open Sans', Arial, Verdana, sans-serif;
+  height: 100%;
+}
+.cont-wrap{
+  min-height: 100%;
+}
 
 ol, ul {
   list-style: none; }
@@ -480,9 +488,12 @@ h2 {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }
-.forex-tips:hover {
+.forex-tips:hover,
+.forex-tips:focus{
   background-color: #585757;
-  color: #fff; }
+  color: #fff;
+  text-decoration: none;
+}
 
 .forex-tips:after {
   content: "\025B8";
@@ -544,4 +555,5 @@ h2 {
 /*================ Footer ================*/
 .blog-footer {
   height: 76px;
-  background-color: #000; }
+  background-color: #000;
+}

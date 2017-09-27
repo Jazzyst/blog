@@ -40,4 +40,14 @@ class Comments extends Model
     {
         return $this->belongsTo(Video::class);
     }
+
+    public function getUserName()
+    {
+        return empty($this->user->name) ? "Guest" : $this->user->name;
+    }
+
+    public function getUserAvatar()
+    {
+        return $this->user ? $this->user->avatar : null;
+    }
 }

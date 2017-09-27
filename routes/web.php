@@ -62,6 +62,9 @@ Route::get('/page/{page}', 'VideoController@show');
 Route::get('/forex', function (){
 	return view('video.forex');
 });
+Route::get('/forex-show', function (){
+	return view('video.forex-show');
+});
 
 // Post Routes
 Route::get('/posts','PostController@index')->name('posts.index');

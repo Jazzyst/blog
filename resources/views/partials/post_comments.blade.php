@@ -8,11 +8,11 @@
                         <span class="user-avatar"><img src=" {{ $comment->getUserAvatar() }} ">
                             <span class="social-icon">
 
-                                {{--<img src="/img/vk.svg" alt="vk">--}}
+                                <img src="/img/vk.svg" alt="vk">
                                 {{--<img src="/img/ok.svg" alt="ok">--}}
                                 {{--<img src="/img/fb.svg" alt="fb">--}}
                                 {{--<img src="/img/twitt.svg" alt="twitt">--}}
-                                <img src="/img/goo.svg" alt="google+">
+                                {{--<img src="/img/goo.svg" alt="google+">--}}
 
                                 
                                 

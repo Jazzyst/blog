@@ -27,20 +27,20 @@ class ComposerProvider extends ServiceProvider
 
 	    Blade::if('vk', function ()
 	    {
-	    	return Auth::user()->website == "vk" ? true : false;
+	    	return Auth::user() && Auth::user()->website == "vk" ? true : false;
 	    });
 	    Blade::if('fb',function ()
 	    {
-            return Auth::user()->website == "fb" ? true : false;
+            return Auth::user() && Auth::user()->website == "fb" ? true : false;
 	    });
 	    Blade::if('ok', function () {
-		    return true;
+            return Auth::user() && Auth::user()->website == "ok" ? true : false;
 	    });
 	    Blade::if('tw', function () {
-            return Auth::user()->website == "tw" ? true : false;
+            return Auth::user() && Auth::user()->website == "tw" ? true : false;
 	    });
 	    Blade::if('gm', function () {
-            return Auth::user()->website == "gm" ? true : false;
+            return Auth::user() && Auth::user()->website == "gm" ? true : false;
 	    });
     }
 

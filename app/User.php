@@ -146,4 +146,9 @@ class User extends Authenticatable
 
         Auth::login($user);
     }
+
+    public function getUserAvatar()
+    {
+        return Auth::user() && Auth::user()->avatar ? Auth::user()->avatar : null;
+    }
 }

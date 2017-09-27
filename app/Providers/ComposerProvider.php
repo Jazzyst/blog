@@ -42,6 +42,10 @@ class ComposerProvider extends ServiceProvider
 	    Blade::if('gm', function () {
             return Auth::user() && Auth::user()->website == "gm" ? true : false;
 	    });
+
+        Blade::if('admin', function () {
+            return true;
+        });
     }
 
     /**

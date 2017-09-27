@@ -455,6 +455,13 @@ h2 {
 /*comments-end*/
 
 
+/*alerts*/
+.alert strong{
+  font-weight: bold;
+}
+
+/*alerts end*/
+
 
 /*================ Footer ================*/
 .foter-wrap {

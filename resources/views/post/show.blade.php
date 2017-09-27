@@ -5,7 +5,10 @@
         </h2>Опубликовано в <a href="/category/{{$post->category->category_id}}">{{$post->category->name}}</a> {{$post->created_at->toFormattedDateString()}} Пользователем {{ $post->user->name }}
         <p class="blog-post-meta">{{$post->body}}</p>
         <p></p>
+        @include('partials.share') <br>
+
         <a class="btn btn-info" style="padding-bottom: 20px;" href="{{ URL::previous() }}">Назад</a><br>
+
     </div><!-- /.blog-post -->
 
     <br>

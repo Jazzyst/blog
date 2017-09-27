@@ -79,11 +79,6 @@ class User extends Authenticatable
     }
 
 
-    public function getUserAvatar()
-    {
-        return Auth::user() && Auth::user()->avatar ? Auth::user()->avatar : null;
-    }
-
     public function getWebSite()
     {
         return $this->website;

@@ -22,6 +22,8 @@
                     <a href="#" class="vk"></a>
                     <a href="#" class="fb"></a>
                     <a href="#" class="twitt"></a>
+                    <a href="#" class="goo"></a>
+                    <a href="#" class="ok"></a>
                 </div>
             </div>
             <div class="clearfix"></div>

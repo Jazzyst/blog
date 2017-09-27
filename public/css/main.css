@@ -37,6 +37,14 @@ table {
   background-color: #000;
   height: 76px; }
 
+h1 {
+  font-size: 33px;
+  font-weight: bold;
+  margin: 50px 0;
+  text-align: center; }
+hr {
+  border-color: #585757; }
+
 nav {
   margin: 20px 0; }
   nav ul {
@@ -267,8 +275,7 @@ nav {
   margin: 50px 0;
   text-align: center; }
 
-.video-review hr {
-  border-color: #000; }
+
 
 .video-wrap {
   margin-bottom: 20px; }
@@ -284,16 +291,23 @@ p{
   text-align: left;
   font-size: 16px;
   line-height: 22px; }
-
+.social{
+  overflow: auto;
+  margin-bottom: 30px;
+}
 .btn-wrap {
   float: left; }
 
 .social-links {
   float: right; }
+.social-links span{
+  vertical-align: middle;
+}
 .social-links a {
   width: 32px;
   height: 32px;
   display: inline-block;
+  vertical-align: middle;
   margin: 0 5px;
   background-repeat: no-repeat;
   background-position: center; }
@@ -308,9 +322,10 @@ p{
 .social-links .ok {
   background-image: url("/img/ok.svg"); }
 .start-trading {
-  border: 1px solid #000;
+  background-color: #585757;
+  border: 2px solid #cccccc;
   padding: 13px 10px 10px;
-  color: #000;
+  color: #fff;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -319,8 +334,9 @@ p{
   display: block; }
 .start-trading:hover,
 .start-trading:focus{
-  background-color: #000;
-  color: #fff;
+  border: 2px solid #585757;
+  background-color: #cccccc;
+  color: #585757;
   text-decoration: none;
 }
 
@@ -445,8 +461,7 @@ h2 {
 /*================ forex-trading ================*/
 .forex-trading h1 {
   font-size: 33px;
-  font-weight: bold;
-  margin: 50px 0; }
+ }
 
 .forex-tips {
   display: block;
@@ -509,13 +524,19 @@ h2 {
 
 
 
-/*alerts*/
+
 .alert strong{
   font-weight: bold;
 }
 
 /*alerts end*/
 
+.img-descr{
+  margin: 10px 0;
+}
+.img-descr img{
+  width: 100%;
+}
 
 
 

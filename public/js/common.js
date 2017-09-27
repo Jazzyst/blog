@@ -18,6 +18,10 @@ $(function() {
 		$("nav li").removeClass("active");
 		$(this).addClass("active");
 	});
-	// top nav END 
+	// top nav END
+
+
+
+    $(".user-avatar img").addClass("circle-img");
 
 });

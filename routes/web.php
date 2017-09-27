@@ -23,10 +23,7 @@ Route::get('/home', 'HomeController@index');
 
 
 
-Route::get('/dev', function (\App\User $user)
-{
-    phpinfo();
-});
+Route::get('/login/vk', 'Auth\LoginController@vk');
 
 Route::group( ['middleware' => ['auth']], function() {
 

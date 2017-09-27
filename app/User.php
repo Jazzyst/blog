@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\FactoryBuilder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\Auth;
@@ -64,87 +65,28 @@ class User extends Authenticatable
 
     public function registerFromGithub($user)
     {
-       $user = User::create([
-            'name' => $user->nickname,
-            'email' => $user->email,
-            'password' => bcrypt('password'),
-            'token' => $user->token,
-            'avatar'    => $user->avatar,
-	        'website' => 'github',
-        ]);
-
-        Auth::login($user);
-
-    }
-
-    public function registerFromVk($user)
-    {
         $user = User::create([
             'name' => $user->nickname,
             'email' => $user->email,
             'password' => bcrypt('password'),
             'token' => $user->token,
-            'avatar'    => $user->avatar,
-            'website' => 'vk',
-        ]);
-
-        Auth::login($user);
-    }
-
-    public function registerFromFb($user)
-    {
-        $user = User::create([
-            'name' => $user->nickname,
-            'email' => $user->email,
-            'password' => bcrypt('password'),
-            'token' => $user->token,
-            'avatar'    => $user->avatar,
-            'website' => 'fb',
-        ]);
-
-        Auth::login($user);
-    }
-
-    public function registerFromOk($user)
-    {
-        $user = User::create([
-            'name' => $user->nickname,
-            'email' => $user->email,
-            'password' => bcrypt('password'),
-            'token' => $user->token,
-            'avatar'    => $user->avatar,
+            'avatar' => $user->avatar,
             'website' => 'ok',
         ]);
 
         Auth::login($user);
+
     }
 
-    public function registerFromTw($user)
-    {
-        $user = User::create([
-            'name' => $user->nickname,
-            'email' => $user->email,
-            'password' => bcrypt('password'),
-            'token' => $user->token,
-            'avatar'    => $user->avatar,
-            'website' => 'tw',
-        ]);
 
-        Auth::login($user);
+    public function getUserAvatar()
+    {
+        return Auth::user() && Auth::user()->avatar ? Auth::user()->avatar : null;
     }
 
-    public function registerFromGm($user)
+    public function getWebSite()
     {
-        $user = User::create([
-            'name' => $user->nickname,
-            'email' => $user->email,
-            'password' => bcrypt('password'),
-            'token' => $user->token,
-            'avatar'    => $user->avatar,
-            'website' => 'gm',
-        ]);
-
-        Auth::login($user);
+        return $this->website;
     }
 
     public function getUserAvatar()

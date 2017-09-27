@@ -7,9 +7,15 @@
                     <div class="user">
                         <span class="user-avatar"><img src=" {{ $comment->getUserAvatar() }} ">
                             <span class="social-icon">
-                                @vk()
-                                <img src="/img/vk.svg" alt="">
-                                @endvk()
+
+                                {{--<img src="/img/vk.svg" alt="vk">--}}
+                                {{--<img src="/img/ok.svg" alt="ok">--}}
+                                {{--<img src="/img/fb.svg" alt="fb">--}}
+                                {{--<img src="/img/twitt.svg" alt="twitt">--}}
+                                <img src="/img/goo.svg" alt="google+">
+
+                                
+                                
                             </span>
                         </span>
                         <span class="user-name">{{ $comment->getUserName() }} </span>

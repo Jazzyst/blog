@@ -1,4 +1,3 @@
-
 <div class="comments">
     <ul class="list-group">
 

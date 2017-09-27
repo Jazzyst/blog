@@ -61,5 +61,8 @@ class LoginController extends Controller
          */
         $user = Socialite::driver('github')->user();
         (new User())->registerFromGithub($user);
+
+        return redirect( route('posts.index'));
     }
+
 }

@@ -19,7 +19,7 @@
 
         </div>
 
-        @include('layouts.sidebar')
+
 
 
 

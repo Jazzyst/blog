@@ -33,7 +33,7 @@
     <body>
     @include("layouts.nav")
 
-    <div class="container">
+    <div class="container cont-wrap">
         <div class="row">
 
             @yield('content')

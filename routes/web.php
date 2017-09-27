@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/admin', function () {
+    $posts = \App\Post::all();
+    $cat = \App\Category::all();
+   return view('admin.index',
+            [
+           'posts' => $posts,
+            'cat' => $cat,
+           ]);
+});
 Auth::routes();
 Route::get('login/github', 'Auth\LoginController@redirectToProvider');
 Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');

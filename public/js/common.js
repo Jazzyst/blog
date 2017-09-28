@@ -20,13 +20,13 @@ $(function() {
 	});
 	// top nav END
 
-	// [function(t,e,n){var i=t("jquery");
-	// i(function(){
-	// 	i(".js-goto-top").on("click",function(){
-	// 		i("html,body").animate({scrollTop:0},"fast")
-	// 	})
-	// })
-	// };
+    $(window).scroll(function(){
+        if($(this).scrollTop() >= 500 && $(this).width() >= 1200) {
+            $('#go-top').fadeIn();
+        } else {
+            $('#go-top').fadeOut();
+        }
+    });
 
 
 

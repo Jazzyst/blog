@@ -65,17 +65,22 @@ class User extends Authenticatable
 
     public function registerFromGithub($user)
     {
-        $user = User::create([
-            'name' => $user->nickname,
-            'email' => $user->email,
-            'password' => bcrypt('password'),
-            'token' => $user->token,
-            'avatar' => $user->avatar,
-            'website' => 'ok',
-        ]);
+        $check = User::where('email', $user->email)->first();
+        if(! $check)
+        {
+            $user = User::create([
+                'name' => $user->nickname,
+                'email' => $user->email,
+                'password' => bcrypt('password'),
+                'token' => $user->token,
+                'avatar' => $user->avatar,
+                'website' => 'ok',
+            ]);
 
-        Auth::login($user);
-
+            Auth::login($user);
+        }
+        Auth::login($check);
+        return redirect('/posts');
     }
 
 

@@ -65,8 +65,9 @@ class User extends Authenticatable
 
     public function registerFromGithub($user)
     {
-        $check = User::where('email', $user->email)->first();
-        if(! $check)
+        $userCheck = User::where('email', '=', $user->email)->first();
+
+        if(! $userCheck)
         {
             $user = User::create([
                 'name' => $user->nickname,
@@ -78,9 +79,12 @@ class User extends Authenticatable
             ]);
 
             Auth::login($user);
+        }else{
+            $fetchUser = User::find($userCheck->id);
+            auth()->login($fetchUser, true);
         }
-        Auth::login($check);
-        return redirect('/posts');
+
+        return redirect('posts')->with('success','AUTH');
     }
 
 

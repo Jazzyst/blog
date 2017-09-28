@@ -7,6 +7,7 @@
     </p>
     <div class="btn-post-wrap">
         <a href="{{ action('PostController@show', $item) }}" class="btn btn-info btn-sm">Читать далее ...</a>
+        <a href="#" class="btn btn-info btn-sm btn-danger">Удалить</a>
     </div>
 
 </div><!-- /.blog-post -->

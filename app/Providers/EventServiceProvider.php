@@ -21,7 +21,10 @@ class EventServiceProvider extends ServiceProvider
             // add your listeners (aka providers) here
             'SocialiteProviders\Twitter\TwitterExtendSocialite@handle',
             'SocialiteProviders\Google\GoogleExtendSocialite@handle',
+            'JhaoDa\SocialiteProviders\Odnoklassniki\OdnoklassnikiExtendSocialite@handle',
+            'SocialiteProviders\VKontakte\VKontakteExtendSocialite@handle',
         ],
+
     ];
 
     /**

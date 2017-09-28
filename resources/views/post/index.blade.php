@@ -4,7 +4,7 @@
     @yield('content')
 
 
-        <div class="row">
+    
 
             <div class="col-md-9 blog-main">
                 <nav class="blog-pagination">
@@ -27,7 +27,6 @@
 
             @include('layouts.sidebar')
 
-        </div>
 
 
 @endsection

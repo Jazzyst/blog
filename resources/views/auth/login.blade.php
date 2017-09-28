@@ -68,7 +68,7 @@
                                     <a href="/login/vk" class="vk"></a>
                                     <a href="/login/fb" class="fb"></a>
                                     <a href="/login/twitter" class="twitt"></a>
-                                    <a href="/login/gmail" class="goo"></a>
+                                    <a href="/login/google" class="goo"></a>
                                     <a href="/login/ok" class="ok"></a>
                                 </div>
 

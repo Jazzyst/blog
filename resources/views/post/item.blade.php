@@ -1,4 +1,5 @@
 <div class="blog-post">
+
     <h2 class="blog-post-title"><a href="/posts/show/{{$item->id}}">{{$item->title}}</a></h2>
     {{--</h2>Опубликовано в: {{$item->created_at->toFormattedDateString()}}<br>--}}
     {{--Пользователем: <a href="/profile/show/{{$item->user->id}}">{{$item->user->name}}</a><br><br>--}}

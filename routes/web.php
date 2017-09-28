@@ -28,6 +28,13 @@ Auth::routes();
 Route::get('login/github', 'Auth\LoginController@redirectToProvider');
 Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
 
+Route::get('login/twitter', 'Auth\LoginController@twitter');
+Route::get('login/twitter/callback', 'Auth\LoginController@twittercallback');
+
+
+Route::get('login/google', 'Auth\LoginController@google');
+Route::get('login/google/callback', 'Auth\LoginController@googlecallback');
+
 Route::get('/home', 'HomeController@index');
 
 

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Laravel\Socialite\Facades\Socialite;
+use SocialiteProviders\Manager\Config;
 
 class LoginController extends Controller
 {
@@ -61,6 +62,55 @@ class LoginController extends Controller
          */
         $user = Socialite::driver('github')->user();
         (new User())->registerFromGithub($user);
+
+        return redirect( route('posts.index'));
+    }
+
+    public function twitter()
+    {
+        $data =
+            [
+             'client_id' => env('TWITTER_KEY'),
+            'client_secret' => env('TWITTER_SECRET'),
+            'redirect' => env('TWITTER_REDIRECT_URI'),
+             ];
+
+        $config = new Config($data['client_id'],$data['client_secret'],$data['redirect']);
+        return Socialite::with('twitter')->setConfig($config)->redirect();
+
+    }
+
+    /**
+     * Obtain the user information from GitHub.
+     *
+     * @return Response
+     */
+    public function twittercallback()
+    {
+        /*
+         * $user User
+         */
+        $user = Socialite::driver('twitter')->user();
+        dd($user);
+    }
+
+    public function google()
+    {
+        return Socialite::with('google')->redirect();
+    }
+
+    /**
+     * Obtain the user information from GitHub.
+     *
+     * @return Response
+     */
+    public function googlecallback()
+    {
+        /*
+         * $user User
+         */
+        $user = Socialite::driver('google')->user();
+        (new User())->registerFromGoogle($user);
 
         return redirect( route('posts.index'));
     }

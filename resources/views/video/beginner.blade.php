@@ -69,11 +69,12 @@
                 <div class="social">
                     <div class="btn-wrap"><a href="#" class="start-trading">начать торговлю</a></div>
                     <div class="social-links">
-                        <a href="#" class="vk"></a>
-                        <a href="#" class="fb"></a>
-                        <a href="#" class="twitt"></a>
-                        <a href="#" class="goo"></a>
-                        <a href="#" class="ok"></a>
+                        {{--<a href="#" class="vk"></a>--}}
+                        {{--<a href="#" class="fb"></a>--}}
+                        {{--<a href="#" class="twitt"></a>--}}
+                        {{--<a href="#" class="goo"></a>--}}
+                        {{--<a href="#" class="ok"></a>--}}
+                        @include('partials.share')
                     </div>
                 </div>
 

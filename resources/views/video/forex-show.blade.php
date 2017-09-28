@@ -50,7 +50,7 @@
     </div>
     {{--@include('partials.coments')--}}
 
-    {{--@include('layouts.sidebar')--}}
+    @include('layouts.sidebar')
 
 
 

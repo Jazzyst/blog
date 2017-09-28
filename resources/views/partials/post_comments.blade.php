@@ -5,7 +5,7 @@
             <li class="list-group-item">
                 @auth
                     <div class="user">
-                        <span class="user-avatar"><img src=" {{ $comment->user->avatar }} " class="circle-img">
+                        <span class="user-avatar"><img src=" {{ $comment->user->avatar ?? null }} " class="circle-img">
                             @foreach($comment->user()->get() as $user)
                                 <span class="social-icon">
                                         @if ($user->website == 'vk')
@@ -31,7 +31,7 @@
 
                 @guest
                         <div class="user">
-                        <span class="user-avatar"><img src=" {{ $comment->user->avatar }} " class="circle-img">
+                        <span class="user-avatar"><img src=" {{ $comment->user->avatar ?? null }} " class="circle-img">
                             @foreach($comment->user()->get() as $user)
                                 <span class="social-icon">
                                         @if ($user->website == 'vk')

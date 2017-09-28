@@ -36,9 +36,33 @@ return [
     ],
 
     'github' => [
-        'client_id' => '21366d928951f4032877',
-        'client_secret' => '51ff46b0fb70656a20210ff897207bc8ea491152',
-        'redirect' => 'http://127.0.0.1:8000/login/github/callback',
+        'client_id' => env('GITHUB_KEY'),
+        'client_secret' => env('GITHUB_SECRET'),
+        'redirect' => env('GITHUB_REDIRECT'),
     ],
 
+    'twitter' => [
+        'client_id' => env('TWITTER_KEY'),
+        'client_secret' => env('TWITTER_SECRET'),
+        'redirect' => env('TWITTER_REDIRECT_URI'),
+    ],
+
+    'google' => [
+        'client_id' => env('GOOGLE_KEY'),
+        'client_secret' => env('GOOGLE_SECRET'),
+        'redirect' => env('GOOGLE_REDIRECT_URI'),
+    ],
+
+    'odnoklassniki' => [
+        'client_id' => env('ODNOKLASSNIKI_ID'),
+        'client_secret' => env('ODNOKLASSNIKI_SECRET'),
+        'client_public' => env('ODNOKLASSNIKI_PUBLIC'),
+        'redirect' => env('ODNOKLASSNIKI_REDIRECT'),
+    ],
+
+    'vkontakte' => [
+        'client_id' => env('VKONTAKTE_KEY'),
+        'client_secret' => env('VKONTAKTE_SECRET'),
+        'redirect' => env('VKONTAKTE_REDIRECT_URI'),
+    ],
 ];

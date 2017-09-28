@@ -63,9 +63,20 @@ class User extends Authenticatable
         return $this->hasMany(Comments::class);
     }
 
+    public function getWebSite()
+    {
+        return $this->website;
+    }
+
+
+    public function getUserAvatar()
+    {
+    	return Auth::user() && Auth::user()->avatar ?  Auth::user()->avatar : 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/07/28/16/avatar.jpg';
+    }
+
     public function registerFromGithub($user)
     {
-        $userCheck = User::where('email', '=', $user->email)->first();
+        $userCheck = $this->checkEmail($user->email);
 
         if(! $userCheck)
         {
@@ -75,7 +86,7 @@ class User extends Authenticatable
                 'password' => bcrypt('password'),
                 'token' => $user->token,
                 'avatar' => $user->avatar,
-                'website' => 'ok',
+                'website' => 'github',
             ]);
 
             Auth::login($user);
@@ -87,14 +98,31 @@ class User extends Authenticatable
         return redirect('posts')->with('success','AUTH');
     }
 
-
-    public function getWebSite()
+    public function registerFromGoogle($user)
     {
-        return $this->website;
+        $userCheck  = $this->checkEmail($user->email);
+
+        if(! $userCheck)
+        {
+            $user = User::create([
+                'name' => $user->name,
+                'email' => $user->email,
+                'password' => bcrypt('password'),
+                'token' => $user->token,
+                'avatar' => $user->avatar,
+                'website' => 'gm',
+            ]);
+
+            Auth::login($user);
+        }else{
+            $fetchUser = User::find($userCheck->id);
+            auth()->login($fetchUser, true);
+        }
+
     }
 
-    public function getUserAvatar()
+    public function checkEmail($email)
     {
-    	return Auth::user() && Auth::user()->avatar ?  Auth::user()->avatar : 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/07/28/16/avatar.jpg';
+        return  $user = User::where('email', '=', $email)->first();
     }
 }

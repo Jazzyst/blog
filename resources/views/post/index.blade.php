@@ -4,11 +4,11 @@
     @yield('content')
 
 
-        <div class="row">
+    
 
             <div class="col-md-9 blog-main">
                 <nav class="blog-pagination">
-                    <a class="btn btn-outline-primary" href="/posts/create">Написать что нибудь</a>
+                    <a class="btn btn-warning btn-custom" href="/posts/create">Добавить статью</a>
                 </nav>
 
 
@@ -27,7 +27,6 @@
 
             @include('layouts.sidebar')
 
-        </div>
 
 
 @endsection

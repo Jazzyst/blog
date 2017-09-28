@@ -20,8 +20,13 @@ $(function() {
 	});
 	// top nav END
 
-
-
+    $(window).scroll(function(){
+        if($(this).scrollTop() >= 500 && $(this).width() >= 1200) {
+            $('#go-top').fadeIn();
+        } else {
+            $('#go-top').fadeOut();
+        }
+    });
 
 
 

@@ -77,7 +77,8 @@ nav {
         font-size: 17px;
         text-transform: uppercase;
         color: #fff; }
-        nav ul li a:hover {
+        nav ul li a:hover,
+        nav ul li a:focus {
           text-decoration: none;
           color: #ffffff;
         }
@@ -591,4 +592,28 @@ h2 {
 .blog-footer {
   height: 76px;
   background-color: #000;
+}
+.blog-post p{
+  font-weight: 400;
+}
+.btn-post-wrap{
+  text-align: left;
+}
+.blog-post-title {
+  font-size: 33px;
+  margin-bottom: 30px;
+}
+.blog-pagination > .btn{
+  border-radius: 4px;
+}
+.blog-post .btn-info{
+  padding: 6px 12px !important;
+}
+
+
+.blog-post-title a,
+.blog-post-title a:hover,
+.blog-post-title a:focus{
+  text-decoration: none;
+  color: #585757;
 }

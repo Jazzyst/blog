@@ -115,4 +115,48 @@ class LoginController extends Controller
         return redirect( route('posts.index'));
     }
 
+    public function ok()
+    {
+        return Socialite::with('odnoklassniki')->redirect();
+    }
+
+    /**
+     * Obtain the user information from GitHub.
+     *
+     * @return Response
+     */
+    public function okcallback()
+    {
+        /*
+         * $user User
+         */
+        $user = Socialite::driver('odnoklassniki')->user();
+        dd($user);
+//        (new User())->registerFromGoogle($user);
+//
+//        return redirect( route('posts.index'));
+    }
+
+    public function vkontakte()
+    {
+        return Socialite::with('vkontakte')->redirect();
+    }
+
+    /**
+     * Obtain the user information from GitHub.
+     *
+     * @return Response
+     */
+    public function vkontaktecallback()
+    {
+        /*
+         * $user User
+         */
+        $user = Socialite::driver('vkontakte')->user();
+        dd($user);
+//        (new User())->registerFromGoogle($user);
+//
+//        return redirect( route('posts.index'));
+    }
+
 }

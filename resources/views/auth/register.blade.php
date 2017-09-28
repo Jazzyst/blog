@@ -72,11 +72,11 @@
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <div class="social-links">
-                                    <a href="/login/vk" class="vk"></a>
-                                    <a href="/login/fb" class="fb"></a>
-                                    <a href="/login/twitter" class="twitt"></a>
-                                    <a href="/login/google" class="goo"></a>
-                                    <a href="/login/ok" class="ok"></a>
+                                    <a href="{{ getenv('vk_auth_link') }}" class="vk"></a>
+                                    <a href="{{ getenv('fb_auth_link') }}" class="fb"></a>
+                                    <a href="{{ getenv('twitter_auth_link') }}" class="twitt"></a>
+                                    <a href="{{ getenv('google_auth_link') }}" class="goo"></a>
+                                    <a href="{{ getenv('ok_auth_link') }}" class="ok"></a>
                                 </div>
 
                             </div>

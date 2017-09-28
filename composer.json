@@ -7,11 +7,13 @@
     "require": {
         "php": ">=7.0.0",
         "fideloper/proxy": "~3.3",
+        "jhaoda/socialite-odnoklassniki": "^3.0",
         "laravel/framework": "5.5.*",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
         "socialiteproviders/google": "^3.0",
-        "socialiteproviders/twitter": "^3.0"
+        "socialiteproviders/twitter": "^3.0",
+        "socialiteproviders/vkontakte": "^3.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.0",

@@ -35,6 +35,9 @@ Route::get('login/twitter/callback', 'Auth\LoginController@twittercallback');
 Route::get('login/google', 'Auth\LoginController@google');
 Route::get('login/google/callback', 'Auth\LoginController@googlecallback');
 
+Route::get('login/ok', 'Auth\LoginController@ok');
+Route::get('login/google/ok', 'Auth\LoginController@okcallback');
+
 Route::get('/home', 'HomeController@index');
 
 

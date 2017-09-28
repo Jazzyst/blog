@@ -21,6 +21,7 @@ body {
 }
 .cont-wrap{
   min-height: 100%;
+
 }
 
 ol, ul {
@@ -44,7 +45,11 @@ table {
 .header-wrap {
   background-color: #000;
   height: 76px; }
+b {
+  font-weight: bold; }
 
+p {
+  margin-bottom: 15px; }
 h1 {
   font-size: 33px;
   font-weight: bold;
@@ -52,6 +57,10 @@ h1 {
   text-align: center; }
 hr {
   border-color: #585757; }
+form{
+  overflow: auto;
+  margin-bottom: 30px;
+}
 
 nav {
   margin: 20px 0; }
@@ -548,6 +557,32 @@ h2 {
 .img-descr img{
   width: 100%;
 }
+
+
+
+/*================ beginner ================*/
+
+.beginner h1,
+.beginner h2{
+  text-align: left;
+}
+  
+.beginner ul {
+  margin-top: 1rem; }
+.beginner ul li {
+  position: relative;
+  padding-left: 1.5625rem; }
+.beginner ul li:before {
+  content: "\025B8";
+  position: absolute;
+  left: -.3125rem;
+  top: -.1875rem;
+  color: #585757;
+  font-size: 1.5rem; }
+
+
+
+/*================ beginner END ================*/
 
 
 

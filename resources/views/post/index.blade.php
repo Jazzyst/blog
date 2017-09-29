@@ -4,7 +4,7 @@
     @yield('content')
 
 
-    
+
 
             <div class="col-md-9 blog-main">
                 <nav class="blog-pagination">

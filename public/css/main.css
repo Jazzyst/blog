@@ -559,6 +559,9 @@ h2 {
   width: 100%;
 }
 
+.panel form{
+  overflow: inherit;
+}
 
 
 /*================ beginner ================*/

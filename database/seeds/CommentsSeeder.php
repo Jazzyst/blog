@@ -14,12 +14,18 @@ class CommentsSeeder extends Seeder
         App\Comments::create([
             'user_id' => 1,
             'post_id'  => 1,
-            'body' => 'Комментарий к статье на главной ( первонах )',
+            'body' => 'Комментарий к статье на главной',
+        ]);
+
+        App\Comments::create([
+            'user_id' => 2,
+            'post_id'  => 1,
+            'body' => 'Не могу не согласиться с пред.оратором',
         ]);
         App\Comments::create([
             'user_id' => 1,
             'post_id'  => 2,
-            'body' => 'Комментарий к новости, пусть она будет трагичной',
+            'body' => 'Комментарий  пусть он будет трагичным',
         ]);
         App\Comments::create([
             'user_id' => 1,

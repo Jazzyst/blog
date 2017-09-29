@@ -13,22 +13,22 @@
                     <h1>Торговля на Forex</h1>
                 </div>
                 <div class="col-sm-6">
-                    <a href="#" class="forex-tips">Движение курса валют на графике Форекс</a>
+                    <a href="/forex-show" class="forex-tips">Движение курса валют на графике Форекс</a>
                 </div>
                 <div class="col-sm-6">
-                    <a href="#" class="forex-tips">Движение курса валют на графике Форекс</a>
+                    <a href="/forex-show" class="forex-tips">Движение курса валют на графике Форекс</a>
                 </div>
                 <div class="col-sm-6">
-                    <a href="#" class="forex-tips">Движение курса валют на графике Форекс</a>
+                    <a href="/forex-show" class="forex-tips">Движение курса валют на графике Форекс</a>
                 </div>
                 <div class="col-sm-6">
-                    <a href="#" class="forex-tips">Движение курса валют на графике Форекс</a>
+                    <a href="/forex-show" class="forex-tips">Движение курса валют на графике Форекс</a>
                 </div>
                 <div class="col-sm-6">
-                    <a href="#" class="forex-tips">Движение курса валют на графике Форекс</a>
+                    <a href="/forex-show" class="forex-tips">Движение курса валют на графике Форекс</a>
                 </div>
                 <div class="col-sm-6">
-                    <a href="#" class="forex-tips">Движение курса валют на графике Форекс</a>
+                    <a href="/forex-show" class="forex-tips">Движение курса валют на графике Форекс</a>
                 </div>
                 <div class="col-sm-12">
                     <p class="descr">Как заработать, торгуя на рынке Forex? Этот вполне уместный вопрос частенько будоражит умы интересующихся интернет-заработком пользователей. Различных вариантов, действительно приносящих прибыль, немало, но самые проверенные и надежные способы вы найдете на нашем сайте.</p>

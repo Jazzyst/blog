@@ -18,11 +18,10 @@ class EventServiceProvider extends ServiceProvider
             'App\Listeners\EventListener',
         ],
         SocialiteWasCalled::class => [
-            // add your listeners (aka providers) here
             'SocialiteProviders\Twitter\TwitterExtendSocialite@handle',
             'SocialiteProviders\Google\GoogleExtendSocialite@handle',
-            'JhaoDa\SocialiteProviders\Odnoklassniki\OdnoklassnikiExtendSocialite@handle',
             'SocialiteProviders\VKontakte\VKontakteExtendSocialite@handle',
+            'JhaoDa\SocialiteProviders\Odnoklassniki\OdnoklassnikiExtendSocialite@handle',
         ],
 
     ];

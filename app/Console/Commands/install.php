@@ -38,7 +38,7 @@ class install extends Command
      */
     public function handle()
     {
-        $install = $this->ask('You trying install, you sure?', false);
+        $install = $this->ask('You trying install, you sure?', true);
         $this->confirm('Installing, do you wish confirm?',false);
         if($install)
         {

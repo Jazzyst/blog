@@ -27,7 +27,7 @@ class ComposerProvider extends ServiceProvider
 
 
         Blade::if('admin', function () {
-            return true;
+            return false;
         });
 
     }

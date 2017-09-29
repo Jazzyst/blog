@@ -15,41 +15,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin', function () {
-    $posts = \App\Post::all();
-    $cat = \App\Category::all();
-   return view('admin.index',
-            [
-           'posts' => $posts,
-            'cat' => $cat,
-           ]);
-});
 Auth::routes();
+// Socials Routes
 Route::get('login/github', 'Auth\LoginController@redirectToProvider');
 Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
-
 Route::get('login/twitter', 'Auth\LoginController@twitter');
 Route::get('login/twitter/callback', 'Auth\LoginController@twittercallback');
-
-
 Route::get('login/google', 'Auth\LoginController@google');
 Route::get('login/google/callback', 'Auth\LoginController@googlecallback');
-
 Route::get('login/ok', 'Auth\LoginController@ok');
 Route::get('login/google/ok', 'Auth\LoginController@okcallback');
+Route::get('/login/vk', 'Auth\LoginController@vk');
+Route::get('/login/vk', 'Auth\LoginController@vkcallback');
+
 
 Route::get('/home', 'HomeController@index');
 
 
-
-Route::get('/login/vk', 'Auth\LoginController@vk');
-
 Route::group( ['middleware' => ['auth']], function() {
-
-    //Video Routes
-
-
-
     Route::prefix('admin')->group(function () {
 
         // Admin User Manage Routes
@@ -67,27 +50,11 @@ Route::group( ['middleware' => ['auth']], function() {
     });
 });
 
-Route::get('/page', 'VideoController@index');
-Route::get('/page/{page}', 'VideoController@show');
-Route::get('/forex', function (){
-	return view('video.forex');
-});
-Route::get('/forex-show', function (){
-	return view('video.forex-show');
-});
-Route::get('/beginner', function (){
-	return view('video.beginner');
-});
-Route::get('/beginner-show', function (){
-	return view('video.beginner-show');
-});
-
 // Post Routes
 Route::get('/posts','PostController@index')->name('posts.index');
 Route::get('/posts/show/{post}','PostController@show')->name('post.show');
 Route::get('/posts/create','PostController@create')->name('post.create');
 Route::post('/posts/post','PostController@store')->name('post.store');
-
 
 // Category Routes
 Route::get('/category', 'CategoryController@index')->name('category.index');
@@ -106,3 +73,21 @@ Route::post('/comments/add/video/{video}','CommentsController@video_store');
 // About Routes
 Route::get('/contact', 'AboutController@index');
 Route::post('/contact/send', 'AboutController@store');
+
+// Page Routes
+Route::get('/page', 'VideoController@index');
+Route::get('/page/{page}', 'VideoController@show');
+
+// Static pages
+Route::get('/forex', function (){
+    return view('video.forex');
+});
+Route::get('/forex-show', function (){
+    return view('video.forex-show');
+});
+Route::get('/beginner', function (){
+    return view('video.beginner');
+});
+Route::get('/beginner-show', function (){
+    return view('video.beginner-show');
+});
